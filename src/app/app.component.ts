@@ -13,6 +13,6 @@ export class AppComponent {
 
   ShowAlert()
   {
-    alert("Aaaaaa :)")
+    alert("Aaaaaa  :)")
   }
 }

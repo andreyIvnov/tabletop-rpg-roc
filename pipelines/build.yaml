@@ -13,4 +13,6 @@ steps:
     args: ['target:apply', 'hosting', 'tabletop-rpg-roc', 'tabletop-rpg-roc', '--token', '${_FIREBASE_TOKEN}']
   - name: 'gcr.io/${_FIREBASE_PROJECT_ID}/firebase'
     args: ['deploy', '--token', '${_FIREBASE_TOKEN}', '--only', 'hosting:tabletop-rpg-roc']
+options:
+  logging: CLOUD_LOGGING_ONLY
 timeout: 1200s
